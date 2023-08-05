@@ -113,8 +113,8 @@ function MainImage(props){
             <div className="character-mainImgs">
                 {data.burin.map((burin) =>
                 <div>
-                    <img className="character-mainImg" src={'/characters/부린/' + burin + '.png'} alt={burin}></img>
-                    <img className="character-mainImgSD" src={'/characters/부린/' + burin + 'SD.png'} alt={burin + ' SD'}></img>
+                    <img className="character-mainImg" src={image_main_dir + burin + '.png'} alt={burin}></img>
+                    <img className="character-mainImgSD" src={image_main_dir + burin + 'SD.png'} alt={burin + ' SD'}></img>
                     <div>{burin}</div>
                 </div>
                 )}
