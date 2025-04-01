@@ -173,9 +173,13 @@ function CharactersMain(){
       }
     }
 
+    function empty_ships(){
+      alert('no ships. restored.')
+      restore()
+    }
 
     new_data.sort((a, b) => a.rareness - b.rareness)
-    new_data.length === 0 ? restore() : redatas(new_data)
+    new_data.length === 0 ? empty_ships() : redatas(new_data)
   }
 
   return (
